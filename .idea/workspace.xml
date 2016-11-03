@@ -23,16 +23,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="276" column="17" selection-start-line="276" selection-start-column="17" selection-end-line="276" selection-end-column="17" />
+            <state relative-caret-position="216">
+              <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-                <element signature="e#1147#1197#0" expanded="true" />
-                <element signature="e#1739#2002#0" expanded="false" />
-                <element signature="e#2034#2088#0" expanded="false" />
+                <element signature="e#1185#1448#0" expanded="false" />
+                <element signature="e#1480#1534#0" expanded="false" />
                 <element signature="n#!!block;n#render#0;n#Main#0" expanded="false" />
                 <element signature="n#!!block;n#handleOk#0;n#Main#0" expanded="false" />
                 <element signature="n#!!block;n#handleDialogEdit#0;n#Main#0" expanded="false" />
@@ -52,18 +51,18 @@
                 <element signature="n#!!block;n#renderFeedback#0;n#Main#0" expanded="false" />
                 <element signature="n#!!block;n#renderDate#0;n#Main#0" expanded="false" />
                 <element signature="n#!!block;n#renderPriority#0;n#Main#0" expanded="false" />
-                <marker date="1478163222822" expanded="true" signature="6481:6582" ph="..." />
-                <marker date="1478163222822" expanded="true" signature="6618:7365" ph="..." />
-                <marker date="1478163222822" expanded="true" signature="7352:7356" ph="..." />
-                <marker date="1478163222822" expanded="true" signature="9761:10423" ph="..." />
-                <marker date="1478163222822" expanded="true" signature="10055:10403" ph="..." />
-                <marker date="1478163222822" expanded="true" signature="10846:10896" ph="..." />
+                <marker date="1478164955184" expanded="true" signature="5927:6028" ph="..." />
+                <marker date="1478164955184" expanded="true" signature="6064:6811" ph="..." />
+                <marker date="1478164955184" expanded="true" signature="6798:6802" ph="..." />
+                <marker date="1478164955184" expanded="true" signature="9207:9869" ph="..." />
+                <marker date="1478164955184" expanded="true" signature="9501:9849" ph="..." />
+                <marker date="1478164955184" expanded="true" signature="10292:10342" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
@@ -152,8 +151,8 @@
         <option value="$PROJECT_DIR$/webpack-dev-server.config.js" />
         <option value="$PROJECT_DIR$/src/app/Comments.js" />
         <option value="$PROJECT_DIR$/src/app/sampleData.js" />
-        <option value="$PROJECT_DIR$/src/app/Main.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/app/Main.js" />
       </list>
     </option>
   </component>
@@ -341,12 +340,12 @@
       <workItem from="1478012393578" duration="32305000" />
       <workItem from="1478050001036" duration="17509000" />
       <workItem from="1478091783739" duration="1115000" />
-      <workItem from="1478092928092" duration="31356000" />
+      <workItem from="1478092928092" duration="31656000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82285000" />
+    <option name="totallyTimeSpent" value="82585000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="35" y="24" width="1331" height="744" extended-state="6" />
@@ -387,7 +386,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/app/Main.js</url>
-          <line>174</line>
+          <line>164</line>
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
@@ -403,9 +402,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#1147#1197#0" expanded="true" />
-            <element signature="e#1739#2002#0" expanded="false" />
-            <element signature="e#2034#2088#0" expanded="false" />
+            <element signature="e#1185#1448#0" expanded="false" />
+            <element signature="e#1480#1534#0" expanded="false" />
             <element signature="n#!!block;n#render#0;n#Main#0" expanded="false" />
             <element signature="n#!!block;n#handleOk#0;n#Main#0" expanded="false" />
             <element signature="n#!!block;n#handleDialogEdit#0;n#Main#0" expanded="false" />
@@ -425,12 +423,12 @@
             <element signature="n#!!block;n#renderFeedback#0;n#Main#0" expanded="false" />
             <element signature="n#!!block;n#renderDate#0;n#Main#0" expanded="false" />
             <element signature="n#!!block;n#renderPriority#0;n#Main#0" expanded="false" />
-            <marker date="1478163222822" expanded="true" signature="6481:6582" ph="..." />
-            <marker date="1478163222822" expanded="true" signature="6618:7365" ph="..." />
-            <marker date="1478163222822" expanded="true" signature="7352:7356" ph="..." />
-            <marker date="1478163222822" expanded="true" signature="9761:10423" ph="..." />
-            <marker date="1478163222822" expanded="true" signature="10055:10403" ph="..." />
-            <marker date="1478163222822" expanded="true" signature="10846:10896" ph="..." />
+            <marker date="1478164955184" expanded="true" signature="5927:6028" ph="..." />
+            <marker date="1478164955184" expanded="true" signature="6064:6811" ph="..." />
+            <marker date="1478164955184" expanded="true" signature="6798:6802" ph="..." />
+            <marker date="1478164955184" expanded="true" signature="9207:9869" ph="..." />
+            <marker date="1478164955184" expanded="true" signature="9501:9849" ph="..." />
+            <marker date="1478164955184" expanded="true" signature="10292:10342" ph="..." />
           </folding>
         </state>
       </provider>
@@ -470,9 +468,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#1147#1197#0" expanded="true" />
-            <element signature="e#1739#2002#0" expanded="false" />
-            <element signature="e#2034#2088#0" expanded="false" />
+            <element signature="e#1185#1448#0" expanded="false" />
+            <element signature="e#1480#1534#0" expanded="false" />
             <element signature="n#!!block;n#render#0;n#Main#0" expanded="false" />
             <element signature="n#!!block;n#handleOk#0;n#Main#0" expanded="false" />
             <element signature="n#!!block;n#handleDialogEdit#0;n#Main#0" expanded="false" />
@@ -492,12 +489,12 @@
             <element signature="n#!!block;n#renderFeedback#0;n#Main#0" expanded="false" />
             <element signature="n#!!block;n#renderDate#0;n#Main#0" expanded="false" />
             <element signature="n#!!block;n#renderPriority#0;n#Main#0" expanded="false" />
-            <marker date="1478163222822" expanded="true" signature="6481:6582" ph="..." />
-            <marker date="1478163222822" expanded="true" signature="6618:7365" ph="..." />
-            <marker date="1478163222822" expanded="true" signature="7352:7356" ph="..." />
-            <marker date="1478163222822" expanded="true" signature="9761:10423" ph="..." />
-            <marker date="1478163222822" expanded="true" signature="10055:10403" ph="..." />
-            <marker date="1478163222822" expanded="true" signature="10846:10896" ph="..." />
+            <marker date="1478164955184" expanded="true" signature="5927:6028" ph="..." />
+            <marker date="1478164955184" expanded="true" signature="6064:6811" ph="..." />
+            <marker date="1478164955184" expanded="true" signature="6798:6802" ph="..." />
+            <marker date="1478164955184" expanded="true" signature="9207:9869" ph="..." />
+            <marker date="1478164955184" expanded="true" signature="9501:9849" ph="..." />
+            <marker date="1478164955184" expanded="true" signature="10292:10342" ph="..." />
           </folding>
         </state>
       </provider>
@@ -537,9 +534,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#1147#1197#0" expanded="true" />
-            <element signature="e#1739#2002#0" expanded="false" />
-            <element signature="e#2034#2088#0" expanded="false" />
+            <element signature="e#1185#1448#0" expanded="false" />
+            <element signature="e#1480#1534#0" expanded="false" />
             <element signature="n#!!block;n#render#0;n#Main#0" expanded="false" />
             <element signature="n#!!block;n#handleOk#0;n#Main#0" expanded="false" />
             <element signature="n#!!block;n#handleDialogEdit#0;n#Main#0" expanded="false" />
@@ -559,12 +555,12 @@
             <element signature="n#!!block;n#renderFeedback#0;n#Main#0" expanded="false" />
             <element signature="n#!!block;n#renderDate#0;n#Main#0" expanded="false" />
             <element signature="n#!!block;n#renderPriority#0;n#Main#0" expanded="false" />
-            <marker date="1478163222822" expanded="true" signature="6481:6582" ph="..." />
-            <marker date="1478163222822" expanded="true" signature="6618:7365" ph="..." />
-            <marker date="1478163222822" expanded="true" signature="7352:7356" ph="..." />
-            <marker date="1478163222822" expanded="true" signature="9761:10423" ph="..." />
-            <marker date="1478163222822" expanded="true" signature="10055:10403" ph="..." />
-            <marker date="1478163222822" expanded="true" signature="10846:10896" ph="..." />
+            <marker date="1478164955184" expanded="true" signature="5927:6028" ph="..." />
+            <marker date="1478164955184" expanded="true" signature="6064:6811" ph="..." />
+            <marker date="1478164955184" expanded="true" signature="6798:6802" ph="..." />
+            <marker date="1478164955184" expanded="true" signature="9207:9869" ph="..." />
+            <marker date="1478164955184" expanded="true" signature="9501:9849" ph="..." />
+            <marker date="1478164955184" expanded="true" signature="10292:10342" ph="..." />
           </folding>
         </state>
       </provider>
@@ -710,15 +706,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="18">
+            <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="276" column="17" selection-start-line="276" selection-start-column="17" selection-end-line="276" selection-end-column="17" />
+        <state relative-caret-position="216">
+          <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#1147#1197#0" expanded="true" />
-            <element signature="e#1739#2002#0" expanded="false" />
-            <element signature="e#2034#2088#0" expanded="false" />
+            <element signature="e#1185#1448#0" expanded="false" />
+            <element signature="e#1480#1534#0" expanded="false" />
             <element signature="n#!!block;n#render#0;n#Main#0" expanded="false" />
             <element signature="n#!!block;n#handleOk#0;n#Main#0" expanded="false" />
             <element signature="n#!!block;n#handleDialogEdit#0;n#Main#0" expanded="false" />
@@ -738,28 +747,14 @@
             <element signature="n#!!block;n#renderFeedback#0;n#Main#0" expanded="false" />
             <element signature="n#!!block;n#renderDate#0;n#Main#0" expanded="false" />
             <element signature="n#!!block;n#renderPriority#0;n#Main#0" expanded="false" />
-            <marker date="1478163222822" expanded="true" signature="6481:6582" ph="..." />
-            <marker date="1478163222822" expanded="true" signature="6618:7365" ph="..." />
-            <marker date="1478163222822" expanded="true" signature="7352:7356" ph="..." />
-            <marker date="1478163222822" expanded="true" signature="9761:10423" ph="..." />
-            <marker date="1478163222822" expanded="true" signature="10055:10403" ph="..." />
-            <marker date="1478163222822" expanded="true" signature="10846:10896" ph="..." />
+            <marker date="1478164955184" expanded="true" signature="5927:6028" ph="..." />
+            <marker date="1478164955184" expanded="true" signature="6064:6811" ph="..." />
+            <marker date="1478164955184" expanded="true" signature="6798:6802" ph="..." />
+            <marker date="1478164955184" expanded="true" signature="9207:9869" ph="..." />
+            <marker date="1478164955184" expanded="true" signature="9501:9849" ph="..." />
+            <marker date="1478164955184" expanded="true" signature="10292:10342" ph="..." />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="18">
-            <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
       </provider>
     </entry>
   </component>

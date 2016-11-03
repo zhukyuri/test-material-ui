@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import RaisedButton from 'material-ui/RaisedButton';
 import dateformat from 'dateformat';
 import Dialog from 'material-ui/Dialog';
 import {deepOrange500} from 'material-ui/styles/colors';
@@ -10,22 +9,14 @@ import Paper from 'material-ui/Paper';
 import Chip from 'material-ui/Chip';
 import {red100,red200,red300,} from 'material-ui/styles/colors';
 import IconButton from 'material-ui/IconButton';
-import {fullWhite} from 'material-ui/styles/colors';
-import ActionAndroid from 'material-ui/svg-icons/action/android';
-import IconMenu from 'material-ui/IconMenu';
-import NavigationExpandMoreIcon from 'material-ui/svg-icons/navigation/expand-more';
 import MenuItem from 'material-ui/MenuItem';
-import FontIcon from 'material-ui/FontIcon';
 import Create from 'material-ui/svg-icons/content/create';
 import Add from 'material-ui/svg-icons/content/content-copy';
 import Feedback from 'material-ui/svg-icons/action/feedback';
-//import Dialog from './Dialog'
 import SelectField from 'material-ui/SelectField';
 import TextField from 'material-ui/TextField';
 import DatePicker from 'material-ui/DatePicker';
-import {Toolbar, ToolbarGroup, ToolbarSeparator, ToolbarTitle} from 'material-ui/Toolbar';
 import Avatar from 'material-ui/Avatar';
-import Divider from 'material-ui/Divider';
 import {
   Table,
   TableBody,
@@ -35,7 +26,6 @@ import {
   TableRow,
   TableRowColumn
 } from 'material-ui/Table';
-import Toggle from 'material-ui/Toggle';
 import {tasks, status, priority, typeEdit, comments} from './sampleData';
 
 const styles = {
