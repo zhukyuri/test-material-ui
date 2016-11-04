@@ -117,89 +117,7 @@ class Main extends Component {
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
         <Paper style={styles.Pager} zDepth={3}>
-          <Paper style={styles.PagerFilter} zDepth={1}>
-            <div style={styles.checkBlock}>
-              <RadioButtonGroup name="filter1" defaultSelected="0" onChange={this.handleFilter1}>
-                <RadioButton
-                  value="0"
-                  label="Всі"
-                  style={styles.checkbox}
-                />
-                <RadioButton
-                  value="1"
-                  label="Відкриті"
-                  style={styles.checkbox}
-                />
-                <RadioButton
-                  value="2"
-                  label="Прострочені"
-                  style={styles.checkbox}
-                />
-                <RadioButton
-                  value="3"
-                  label="Виконані"
-                  style={styles.checkbox}
-                />
-              </RadioButtonGroup>
-            </div>
-            <div style={styles.checkBlock}>
-              <RadioButtonGroup name="filter2" defaultSelected="0" onChange={this.handleFilter2}>
-                <RadioButton
-                  value="0"
-                  label="Всі"
-                  style={styles.checkbox}
-                />
-                <RadioButton
-                  value="1"
-                  label="Гарячі"
-                  style={styles.checkbox}
-                />
-                <RadioButton
-                  value="2"
-                  label="Не гарячі"
-                  style={styles.checkbox}
-                />
-              </RadioButtonGroup>
-            </div>
-            <div style={styles.checkBlock}>
-              <RadioButtonGroup name="filter3" defaultSelected="0" onChange={this.handleFilter3}>
-                <RadioButton
-                  value="0"
-                  label="Всі"
-                  style={styles.checkbox}
-                />
-                <RadioButton
-                  value="1"
-                  label="З коментарями"
-                  style={styles.checkbox}
-                />
-                <RadioButton
-                  value="2"
-                  label="Без коментарів"
-                  style={styles.checkbox}
-                />
-              </RadioButtonGroup>
-            </div>
-            <div style={styles.checkBlock}>
-               <DatePicker
-                hintText="Дата завершення завдання"
-                container="inline"
-                mode="landscape"
-                floatingLabelText="Дата завершення завдання"
-                floatingLabelFixed={true}
-                value={this.getDateFormat(this.state.filters.f4)}
-                disabled={!this.state.filters.f5}
-                onChange={(e, index, value) => this.handleFilter4(e, index, value)}
-              >
-              </DatePicker>
-              <Checkbox
-                label="Фільтр по даті"
-                checked={this.state.filters.f5}
-                style={styles.checkbox}
-                onCheck={this.handleCheckDateFilter}
-              />
-            </div>
-          </Paper>
+          { this.rehderFilters() }
           <div style={styles.container}>
             { this.renderDialog() }
             { this.renderCommentsDialog() }
@@ -424,6 +342,94 @@ class Main extends Component {
       return i.id === id;
     });
     return res.length === 0 ? false : true;
+  }
+
+  rehderFilters() {
+    return (
+      <Paper style={styles.PagerFilter} zDepth={1}>
+        <div style={styles.checkBlock}>
+          <RadioButtonGroup name="filter1" defaultSelected="0" onChange={this.handleFilter1}>
+            <RadioButton
+              value="0"
+              label="Всі"
+              style={styles.checkbox}
+            />
+            <RadioButton
+              value="1"
+              label="Відкриті"
+              style={styles.checkbox}
+            />
+            <RadioButton
+              value="2"
+              label="Прострочені"
+              style={styles.checkbox}
+            />
+            <RadioButton
+              value="3"
+              label="Виконані"
+              style={styles.checkbox}
+            />
+          </RadioButtonGroup>
+        </div>
+        <div style={styles.checkBlock}>
+          <RadioButtonGroup name="filter2" defaultSelected="0" onChange={this.handleFilter2}>
+            <RadioButton
+              value="0"
+              label="Всі"
+              style={styles.checkbox}
+            />
+            <RadioButton
+              value="1"
+              label="Гарячі"
+              style={styles.checkbox}
+            />
+            <RadioButton
+              value="2"
+              label="Не гарячі"
+              style={styles.checkbox}
+            />
+          </RadioButtonGroup>
+        </div>
+        <div style={styles.checkBlock}>
+          <RadioButtonGroup name="filter3" defaultSelected="0" onChange={this.handleFilter3}>
+            <RadioButton
+              value="0"
+              label="Всі"
+              style={styles.checkbox}
+            />
+            <RadioButton
+              value="1"
+              label="З коментарями"
+              style={styles.checkbox}
+            />
+            <RadioButton
+              value="2"
+              label="Без коментарів"
+              style={styles.checkbox}
+            />
+          </RadioButtonGroup>
+        </div>
+        <div style={styles.checkBlock}>
+          <DatePicker
+            hintText="Дата завершення завдання"
+            container="inline"
+            mode="landscape"
+            floatingLabelText="Дата завершення завдання"
+            floatingLabelFixed={true}
+            value={this.getDateFormat(this.state.filters.f4)}
+            disabled={!this.state.filters.f5}
+            onChange={(e, index, value) => this.handleFilter4(e, index, value)}
+          >
+          </DatePicker>
+          <Checkbox
+            label="Фільтр по даті"
+            checked={this.state.filters.f5}
+            style={styles.checkbox}
+            onCheck={this.handleCheckDateFilter}
+          />
+        </div>
+      </Paper>
+    )
   }
 
   renderCommentsDialog() {
