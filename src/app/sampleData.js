@@ -1,7 +1,7 @@
 export const status = [
   'Нове завдання',
-  'В розробці',
-  'Завершено'
+  'На виконанні',
+  'Виконано'
 ];
 
 export const priority = [
@@ -16,60 +16,70 @@ export const typeEdit = [
 
 export const tasks = [
   {
+    id: 0,
     status: 0,
     textTask: 'sample text 0',
     date: '2016-11-01',
     priority: 0
   },
   {
+    id: 1,
     status: 1,
     textTask: 'sample text 1',
     date: '2016-10-01',
     priority: 1
   },
   {
+    id: 2,
     status: 2,
     textTask: 'sample text 2',
     date: '2016-10-02',
     priority: 0
   },
   {
+    id: 3,
     status: 0,
     textTask: 'sample text 3',
     date: '2016-10-05',
     priority: 1
   },
   {
+    id: 4,
     status: 0,
     textTask: 'sample text 4',
     date: '2016-10-10',
     priority: 0
   },
   {
+    id: 5,
     status: 2,
     textTask: 'sample text 5',
     date: '2016-10-11',
     priority: 1
   },
   {
+    id: 6,
     status: 0,
     textTask: 'sample text 6',
     date: '2016-11-19',
     priority: 0
   },
   {
+    id: 7,
     status: 1,
     textTask: 'sample text 7',
     date: '2016-11-20',
     priority: 1
   },
   {
+    id: 8,
     status: 2,
     textTask: 'sample text 8',
     date: '2016-11-24',
     priority: 0
   },
   {
+    id: 9,
     status: 0,
     textTask: 'sample text 9',
     date: '2016-11-29',
