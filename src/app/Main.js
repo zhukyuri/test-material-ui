@@ -369,6 +369,11 @@ class Main extends Component {
     return res;
   }
 
+  isDone(id) {
+    let task = this.getTaskById(id);
+    return task.status === 2;
+  }
+
   filterTask() {
     let s = this.state.filters;
     return tasks.filter((i, ind) => {
@@ -547,7 +552,11 @@ class Main extends Component {
             <IconButton tooltip="SVG Icon" onTouchTap={() => this.handleDialogEdit(i.id)}>
               <Create />
             </IconButton>
-            <IconButton tooltip="SVG Icon" onTouchTap={() => this.handleDialogCopy(i.id)}>
+            <IconButton
+              tooltip="SVG Icon"
+              disabled={!this.isDone(i.id)}
+              onTouchTap={() => this.handleDialogCopy(i.id)}
+            >
               <Add />
             </IconButton>
             { this.renderFeedback(i.id) }
