@@ -381,10 +381,10 @@ class Main extends Component {
       // f1
       switch (s.f1) {
         case 1:
-          f = f && (i.status === 0 || i.status === 1);
+          f = f && (i.status === 0 || i.status === 1) ;
           break;
         case 2:
-          f = f && this.compareDateDeadLine(i.date);
+          f = f && this.compareDateDeadLine(i.date) && !this.isDone(i.id);
           break;
         case 3:
           f = f && (i.status === 2);
@@ -546,14 +546,14 @@ class Main extends Component {
         <TableRow key={ind}>
           <TableRowColumn>{status[i.status]}</TableRowColumn>
           <TableRowColumn>{i.textTask}</TableRowColumn>
-          <TableRowColumn>{this.renderDate(i.date)}</TableRowColumn>
+          <TableRowColumn>{this.renderDate(i)}</TableRowColumn>
           <TableRowColumn> { this.renderPriority(i.priority) }</TableRowColumn>
           <TableRowColumn>
-            <IconButton tooltip="SVG Icon" onTouchTap={() => this.handleDialogEdit(i.id)}>
+            <IconButton tooltip="Редагувати" onTouchTap={() => this.handleDialogEdit(i.id)}>
               <Create />
             </IconButton>
             <IconButton
-              tooltip="SVG Icon"
+              tooltip="Копіювати"
               disabled={!this.isDone(i.id)}
               onTouchTap={() => this.handleDialogCopy(i.id)}
             >
@@ -569,13 +569,13 @@ class Main extends Component {
   renderFeedback(id) {
     if (this.isComment(id)) {
       return (
-        <IconButton tooltip="SVG Icon" onTouchTap={() => this.handleOpenComments(id)}>
+        <IconButton tooltip="Коментарі" onTouchTap={() => this.handleOpenComments(id)}>
           <SpeacerNotes />
         </IconButton>
       )
     } else {
       return (
-        <IconButton tooltip="SVG Icon" onTouchTap={() => this.handleOpenComments(id)}>
+        <IconButton tooltip="Коментарі" onTouchTap={() => this.handleOpenComments(id)}>
           <SpeacerNotesOff />
         </IconButton>
       );
@@ -584,10 +584,10 @@ class Main extends Component {
 
   renderDate(param) {
     let color = '#FFF';
-    if (new Date(param) < new Date()) color = red100;
+    if (new Date(param.date) < new Date() && !this.isDone(param.id)) color = red100;
     return (
       <Chip backgroundColor={color}>
-        {this.setDateFormat(param)}
+        {this.setDateFormat(param.date)}
       </Chip>
     )
   }
