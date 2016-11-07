@@ -12,16 +12,13 @@ import IconButton from 'material-ui/IconButton';
 import MenuItem from 'material-ui/MenuItem';
 import Create from 'material-ui/svg-icons/content/create';
 import Add from 'material-ui/svg-icons/content/content-copy';
-import Feedback from 'material-ui/svg-icons/action/feedback';
-import SpeacerNotes from 'material-ui/svg-icons/action/speaker-notes';
-import SpeacerNotesOff from 'material-ui/svg-icons/action/speaker-notes-off';
-import Clear from 'material-ui/svg-icons/content/clear';
+import SpeakerNotes from 'material-ui/svg-icons/action/speaker-notes';
+import SpeakerNotesOff from 'material-ui/svg-icons/action/speaker-notes-off';
 import SelectField from 'material-ui/SelectField';
 import TextField from 'material-ui/TextField';
 import DatePicker from 'material-ui/DatePicker';
 import Avatar from 'material-ui/Avatar';
 import Checkbox from 'material-ui/Checkbox';
-import ActionHome from 'material-ui/svg-icons/action/home';
 import {RadioButton, RadioButtonGroup} from 'material-ui/RadioButton';
 import {
   Table,
@@ -85,7 +82,7 @@ class Main extends Component {
       openDialogComments: false,
       commentId: null,
       dialogTitle: '-',
-      editId: null,
+      editId: -1,
       editData: {},
       editType: 1,
       filters: {f1: 0, f2: 0, f3: 0, f4: dateformat(new Date(), 'yyyy-mm-dd'), f5: false}
@@ -151,18 +148,15 @@ class Main extends Component {
   }
 
   handleFilter1(i, value) {
-    let filters = this.state.filters;
-    this.setState({filters: {...filters, f1: parseInt(value)}});
+    this.setState({filters: {...this.state.filters, f1: parseInt(value)}});
   }
 
   handleFilter2(i, value) {
-    let filters = this.state.filters;
-    this.setState({filters: {...filters, f2: parseInt(value)}});
+    this.setState({filters: {...this.state.filters, f2: parseInt(value)}});
   }
 
   handleFilter3(i, value) {
-    let filters = this.state.filters;
-    this.setState({filters: {...filters, f3: parseInt(value)}});
+    this.setState({filters: {...this.state.filters, f3: parseInt(value)}});
   }
 
   handleFilter4(i, value) {
@@ -171,14 +165,13 @@ class Main extends Component {
 
   handleOk() {
     let t = tasks;
-    if (this.state.editId) {
+    if (this.state.editId>=0) {
       t[this.state.editId] = this.state.editData;
     }
     else {
       t.push(this.state.editData);
     }
     this.setState({
- //     tasks: t,
       openDialog: false
     });
   };
@@ -199,9 +192,9 @@ class Main extends Component {
     this.setState({
       openDialog: true,
       dialogTitle: typeEdit[1],
-      editId: null,
+      editId: -1,
       editData: {status: 0, textTask: `Копія: ${task.textTask}`, date: new Date(), priority: task.priority},
-      editType: 0
+      editType: 1
     });
   };
 
@@ -215,7 +208,7 @@ class Main extends Component {
     this.setState({
       openDialog: true,
       dialogTitle: typeEdit[1],
-      editId: null,
+      editId: -1,
       editData: {
         id: tasks.length,
         status: 0,
@@ -223,7 +216,7 @@ class Main extends Component {
         date: new Date(),
         priority: 0
       },
-      editType: 0
+      editType: 1
     });
   };
 
@@ -241,24 +234,20 @@ class Main extends Component {
   };
 
   updatePriority(e, index, value) {
-    let o = Object.assign(this.state.editData, {priority: value});
-    this.setState({editData: o});
+    this.setState({editData: {...this.state.editData, priority: value}});
   }
 
   updateStatus(e, index, value) {
-    let o = Object.assign(this.state.editData, {status: value});
-    this.setState({editData: o});
+    this.setState({editData: {...this.state.editData, status: value}});
   }
 
   updateText(p) {
-    let o = Object.assign(this.state.editData, {textTask: p.target.value});
-    this.setState({editData: o});
+    this.setState({editData: {...this.state.editData, textTask: p.target.value}});
   }
 
   updateDate(e, value) {
     let dat = dateformat(new Date(value), 'yyyy-mm-dd');
-    let o = Object.assign(this.state.editData, {date: dat});
-    this.setState({editData: o});
+    this.setState({editData: {...this.state.editData, date: dat}});
   }
 
   compareDateDeadLine(date) {
@@ -576,13 +565,13 @@ class Main extends Component {
     if (this.isComment(id)) {
       return (
         <IconButton tooltip="Коментарі" onTouchTap={() => this.handleOpenComments(id)}>
-          <SpeacerNotes />
+          <SpeakerNotes />
         </IconButton>
       )
     } else {
       return (
         <IconButton tooltip="Коментарі" onTouchTap={() => this.handleOpenComments(id)}>
-          <SpeacerNotesOff />
+          <SpeakerNotesOff />
         </IconButton>
       );
     }
